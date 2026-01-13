@@ -1,4 +1,4 @@
-# -prog-str-2E-AlejandroSalgado
+# -prog-str-2E-Dev
 Repositorio del cuatrimestre
 
 Autor: Salgado Uresti Rene Alejandro
