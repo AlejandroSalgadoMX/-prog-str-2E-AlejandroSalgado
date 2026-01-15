@@ -34,8 +34,8 @@ public class Main {
                     break;
                 case 2:
                     System.out.println("Calcular área de un rectángulo.");
-                    double baseRectangulo= obtenerDouble(sc,"Ingresa el peso en KG");
-                    double alturaRectangulo= obtenerDouble(sc,"Ingresa la altura en M -> 1.80");
+                    double baseRectangulo= obtenerDouble(sc,"Ingresa la base en Mts");
+                    double alturaRectangulo= obtenerDouble(sc,"Ingresa la altura en Mts -> 1.80");
                     double areaRectangulo=calcularAreaRectangulo(baseRectangulo,alturaRectangulo);
                     System.out.println("Area: "+areaRectangulo);
 
