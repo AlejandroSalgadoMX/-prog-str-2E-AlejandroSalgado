@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/-prog-str-2E-AlejandroSalgado.iml" filepath="$PROJECT_DIR$/.idea/-prog-str-2E-AlejandroSalgado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ActividadBuenasPracticas/ActividadBuenasPracticas.iml" filepath="$PROJECT_DIR$/ActividadBuenasPracticas/ActividadBuenasPracticas.iml" />
       <module fileurl="file://$PROJECT_DIR$/BuenasPracticas/BuenasPracticas.iml" filepath="$PROJECT_DIR$/BuenasPracticas/BuenasPracticas.iml" />
       <module fileurl="file://$PROJECT_DIR$/HolaMundo/HolaMundo.iml" filepath="$PROJECT_DIR$/HolaMundo/HolaMundo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaDocs/JavaDocs.iml" filepath="$PROJECT_DIR$/JavaDocs/JavaDocs.iml" />
