@@ -25,29 +25,33 @@ public class ActividadSwitchCalculadora {
             System.out.println("Opción inválida");
             System.exit(0);
         }else {
-            double variableA = obtenerDouble(sc, "Ingresa el numero: ");
-            double variableB = obtenerDouble(sc, "Ingresa el numero:");
+            double variableA = obtenerDouble(sc, "Ingresa el primer número: ");
+            double variableB = obtenerDouble(sc, "Ingresa el segundo número:");
 
             switch (opcion) {
                 case 1:
+                    System.out.println("SUMA");
                     double resultadoSuma = calcularSuma(variableA, variableB);
-                    System.out.println("El resultado de la suma es: " + resultadoSuma);
+                    System.out.println(variableA+"+"+variableB+"="+ resultadoSuma);
                     break;
 
                 case 2:
+                    System.out.println("RESTA");
                     double resultadoResta = calcularResta(variableA, variableB);
-                    System.out.println("El resultado de la resta es: " + resultadoResta);
+                    System.out.println(variableA+"-"+variableB+"="+ resultadoResta);
                     break;
 
                 case 3:
+                    System.out.println("MULTIPLICACIÓN");
                     double resultadoMultiplicacion = calcularMultiplicacion(variableA, variableB);
-                    System.out.println("El resultado de la multiplicación es:" + resultadoMultiplicacion);
+                    System.out.println(variableA+"*"+variableB+ "="+ resultadoMultiplicacion);
                     break;
 
                 case 4:
                     if (validarDivision(variableA, variableB)) {
+                        System.out.println("DIVISIÓN");
                         double resultadoDivision = calcularDivision(variableA, variableB);
-                        System.out.println("El resultado de la división es: " + resultadoDivision);
+                        System.out.println(variableA+"/"+variableB+"="+ resultadoDivision);
                     } else {
                         System.out.println("No se puede dividir entre 0");
                     }
