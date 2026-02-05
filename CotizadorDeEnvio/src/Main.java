@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * @author Salgado Uresti Rene Alejandro - 2E
  */

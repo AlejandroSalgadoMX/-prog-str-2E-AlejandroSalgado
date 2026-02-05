@@ -51,7 +51,6 @@ public class ShippingCalculator {
             subtotal *= TARIFAEXTRAZONAREMOTA;
         }
         return subtotal;
-
     }
 
     /**

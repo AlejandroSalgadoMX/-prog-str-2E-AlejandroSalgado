@@ -12,7 +12,7 @@ public class Ticket {
         System.out.println("Peso:             "+Main.pesoKG +"kg");
         System.out.println("Distancia:        "+Main.distanciaKm+"km");
         System.out.println("Es zona remota:   "+zonaRemota);
-        System.out.println("Subtotal:        $"+Main.subTotal);
+        System.out.println("Subtotal:        $"+ Main.subTotal);
         System.out.println("IVA:             $"+ Main.IVACalculado);
         System.out.println("Total:           $"+ Main.totalFinal);
         System.out.println("============================================");
