@@ -30,8 +30,8 @@ public class ShippingCalculator {
      * se mandaron a llamar las variables directamente
      * @return -> double
      */
-    public static double calcularSubtotal() {
-        if (Main.tipoDeServicio == SERVICIOESTANDAR) {
+    public static double calcularSubtotal(int tipoDeServicio) {
+        if (tipoDeServicio == SERVICIOESTANDAR) {
             subtotal = TARIFAESTANDAR;
         } else if (Main.tipoDeServicio==SERVICIOEXPRESS){
             subtotal = TARIFAEXPRESS;

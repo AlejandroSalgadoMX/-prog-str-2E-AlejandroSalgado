@@ -30,7 +30,7 @@ public class Main {
         esZonaRemota=inputValidator1.validarZonaRemota(scanner,"Es zona remota? \n(SI - NO)");
 
         //Process
-        subTotal=ShippingCalculator.calcularSubtotal();
+        subTotal=ShippingCalculator.calcularSubtotal(tipoDeServicio);
         IVACalculado = ShippingCalculator.calcularIVA(ShippingCalculator.subtotal);
         totalFinal = ShippingCalculator.calcularTotal(ShippingCalculator.subtotal, ShippingCalculator.ivaCalculado);
 
