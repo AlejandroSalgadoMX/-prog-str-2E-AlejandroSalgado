@@ -12,12 +12,14 @@
       <module fileurl="file://$PROJECT_DIR$/ControlSwitchSalgadoRene/ControlSwitchSalgadoRene.iml" filepath="$PROJECT_DIR$/ControlSwitchSalgadoRene/ControlSwitchSalgadoRene.iml" />
       <module fileurl="file://$PROJECT_DIR$/CotizadorDeEnvio/CotizadorDeEnvio.iml" filepath="$PROJECT_DIR$/CotizadorDeEnvio/CotizadorDeEnvio.iml" />
       <module fileurl="file://$PROJECT_DIR$/EjemploArreglos/EjemploArreglos.iml" filepath="$PROJECT_DIR$/EjemploArreglos/EjemploArreglos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EjemploCrud/EjemploCrud.iml" filepath="$PROJECT_DIR$/EjemploCrud/EjemploCrud.iml" />
       <module fileurl="file://$PROJECT_DIR$/HolaMundo/HolaMundo.iml" filepath="$PROJECT_DIR$/HolaMundo/HolaMundo.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaDocs/JavaDocs.iml" filepath="$PROJECT_DIR$/JavaDocs/JavaDocs.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavadocSalgadoRene/JavadocSalgadoRene.iml" filepath="$PROJECT_DIR$/JavadocSalgadoRene/JavadocSalgadoRene.iml" />
       <module fileurl="file://$PROJECT_DIR$/MenuDeConversion/MenuDeConversion.iml" filepath="$PROJECT_DIR$/MenuDeConversion/MenuDeConversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/MergeWithConflict/MergeWithConflict.iml" filepath="$PROJECT_DIR$/MergeWithConflict/MergeWithConflict.iml" />
       <module fileurl="file://$PROJECT_DIR$/MergeWithOutConflict/MergeWithOutConflict.iml" filepath="$PROJECT_DIR$/MergeWithOutConflict/MergeWithOutConflict.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PersonasCRUD/PersonasCRUD.iml" filepath="$PROJECT_DIR$/PersonasCRUD/PersonasCRUD.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraPOO/calculadoraPOO(EjemploClases).iml" filepath="$PROJECT_DIR$/calculadoraPOO/calculadoraPOO(EjemploClases).iml" />
     </modules>
   </component>
