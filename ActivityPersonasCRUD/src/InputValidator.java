@@ -8,6 +8,7 @@ public class InputValidator {
     //Instancia de Menu
     Menu menu1=new Menu();
 
+
     /**
      * Metodo que valida la opcion a elegir
      *
@@ -28,6 +29,7 @@ public class InputValidator {
             }
         }
     }
+
 
     /**
      * Metodo para validar que el ID sea valido

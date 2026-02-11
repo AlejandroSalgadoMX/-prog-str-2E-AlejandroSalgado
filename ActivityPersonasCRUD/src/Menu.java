@@ -1,9 +1,8 @@
-import java.util.Scanner;
-
 /**
  * @author Salgado Uresti Rene Alejandro - 2E
  */
 public class Menu {
+
 
     /**
      * Metodo para imprimir en terminal
@@ -16,4 +15,5 @@ public class Menu {
         System.out.println("5) Actualizar nombre por ID");
         System.out.println("0) Salir");
     }
+
 }

@@ -3,12 +3,14 @@
  */
 public class Persona {
 
+
     /**
      * Declaracion de variables
      */
     private int id;
     private String name;
     private boolean isActive;
+
 
     /**
      * Constructor con parametros
@@ -21,6 +23,7 @@ public class Persona {
         this.isActive=true;
     }
 
+
     /**
      * Getters and Setters
      * @return -> variables (String, int, boolean)
@@ -29,6 +32,7 @@ public class Persona {
     public void setName(String name) {this.name = name;}
     public boolean isActive() {return isActive;}
     public void setActive(boolean isActive) {this.isActive = isActive;}
+
 
     /**
      * Metodo toString para imprimir arrays
@@ -44,4 +48,5 @@ public class Persona {
         sb.append("");
         return sb.toString();
     }
+
 }

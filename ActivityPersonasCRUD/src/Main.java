@@ -6,15 +6,18 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
+
         //Declaracion de arreglo
         Persona[] personas = new Persona[20];
         //Declaracion de scanner
         Scanner scanner=new Scanner(System.in);
 
+
         //Instancia de clases
         Menu menu1=new Menu();
         InputValidator inputValidator1=new InputValidator();
         ProcessPersona process=new ProcessPersona();
+
 
         //Process
         int option;
@@ -61,4 +64,5 @@ public class Main {
             }
         } while (option != 0);
     }
+
 }

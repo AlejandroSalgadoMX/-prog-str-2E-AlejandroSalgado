@@ -4,8 +4,10 @@ import java.util.Scanner;
  */
 public class ProcessPersona {
 
+
     //Instancia de InputValidator
     InputValidator validator=new InputValidator();
+
 
     /**
      * Metodo para dar de alta y llenar un arreglo
@@ -39,6 +41,7 @@ public class ProcessPersona {
         System.out.println("\n"+persona1.toString());
     }
 
+
     /**
      * Metodo para verificar que un valor dentro del arreglo no exista
      * @param id -> int
@@ -54,6 +57,7 @@ public class ProcessPersona {
         return false;
     }
 
+
     /**
      * Metodo para verificar que un espacio en el arreglo este vacio, o que no este lleno
      * @param personas -> arreglo
@@ -67,6 +71,7 @@ public class ProcessPersona {
         }
         return -1;
     }
+
 
     /**
      * Metodo para buscar un ID e imprime la informacion que contenga ese ID
@@ -119,6 +124,7 @@ public class ProcessPersona {
         }
     }
 
+
     /**
      * Metodo para imprimir los datos que estan dentro del arreglo, solo si un parametro boolean es (true)
      * @param personas -> arreglo
@@ -130,6 +136,7 @@ public class ProcessPersona {
             }
         }
     }
+
 
     /**
      * Metodo para cambiar el valor de un String dentro del arreglo
@@ -164,5 +171,6 @@ public class ProcessPersona {
             System.out.println("ID no encontrado");
         }
     }
+
 
 }
