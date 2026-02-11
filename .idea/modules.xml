@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/-prog-str-2E-AlejandroSalgado.iml" filepath="$PROJECT_DIR$/.idea/-prog-str-2E-AlejandroSalgado.iml" />
       <module fileurl="file://$PROJECT_DIR$/ActividadBuenasPracticas/ActividadBuenasPracticas.iml" filepath="$PROJECT_DIR$/ActividadBuenasPracticas/ActividadBuenasPracticas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ActivityPersonasCRUD/ActivityPersonasCRUD.iml" filepath="$PROJECT_DIR$/ActivityPersonasCRUD/ActivityPersonasCRUD.iml" />
       <module fileurl="file://$PROJECT_DIR$/AdivinaNumero/AdivinaNumero.iml" filepath="$PROJECT_DIR$/AdivinaNumero/AdivinaNumero.iml" />
       <module fileurl="file://$PROJECT_DIR$/APP/ApunteClase.iml" filepath="$PROJECT_DIR$/APP/ApunteClase.iml" />
       <module fileurl="file://$PROJECT_DIR$/BuenasPracticas/BuenasPracticas.iml" filepath="$PROJECT_DIR$/BuenasPracticas/BuenasPracticas.iml" />
@@ -19,7 +20,6 @@
       <module fileurl="file://$PROJECT_DIR$/MenuDeConversion/MenuDeConversion.iml" filepath="$PROJECT_DIR$/MenuDeConversion/MenuDeConversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/MergeWithConflict/MergeWithConflict.iml" filepath="$PROJECT_DIR$/MergeWithConflict/MergeWithConflict.iml" />
       <module fileurl="file://$PROJECT_DIR$/MergeWithOutConflict/MergeWithOutConflict.iml" filepath="$PROJECT_DIR$/MergeWithOutConflict/MergeWithOutConflict.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PersonasCRUD/PersonasCRUD.iml" filepath="$PROJECT_DIR$/PersonasCRUD/PersonasCRUD.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraPOO/calculadoraPOO(EjemploClases).iml" filepath="$PROJECT_DIR$/calculadoraPOO/calculadoraPOO(EjemploClases).iml" />
     </modules>
   </component>
