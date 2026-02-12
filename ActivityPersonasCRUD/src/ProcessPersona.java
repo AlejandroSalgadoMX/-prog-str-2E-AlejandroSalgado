@@ -163,7 +163,6 @@ public class ProcessPersona {
                         }
                     }else {
                         System.out.println("ID dado de baja");
-                        return;
                     }
                 }
             }
