@@ -1,6 +1,10 @@
 public class Menu {
 
+    /**
+     * Metodo para imprimir el menu en terminal
+     */
     protected void printMenu(){
+        System.out.println("----Menu AlumnoCRUD----");
         System.out.println("1) Alta Alumno");
         System.out.println("2) Buscar por ID");
         System.out.println("3) Actualizar promedio por ID");

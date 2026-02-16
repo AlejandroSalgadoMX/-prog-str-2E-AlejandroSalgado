@@ -46,4 +46,28 @@ public class InputValidator {
         }
 
     }
+
+    /**
+     * Metodo para validar que el promedio ingresado sea válido
+     * @param scanner -> Declarado en Main
+     * @return -> double
+     */
+    protected double validateDoubleGrade(Scanner scanner, String message){
+        double input;
+        while (true){
+            System.out.println(message);
+            if (scanner.hasNextDouble()){
+                input=scanner.nextDouble();
+                if (input>=0 && input<=10){
+                    return input;
+                }else {
+                    System.out.println("Promedio ingresado no valido, fuera de rango");
+                }
+            }else {
+                System.out.println("Valor ingresado no valido, no es numérico");
+                scanner.next();
+            }
+        }
+    }
+
 }

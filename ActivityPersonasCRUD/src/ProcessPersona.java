@@ -74,7 +74,7 @@ public class ProcessPersona {
 
 
     /**
-     * Metodo para buscar un ID e imprime la informacion que contenga ese ID
+     * Metodo para buscar un ID e imprime la información que contenga ese ID
      * @param personas -> arreglo
      * @param scanner -> declarado en Main
      */
@@ -126,7 +126,7 @@ public class ProcessPersona {
 
 
     /**
-     * Metodo para imprimir los datos que estan dentro del arreglo, solo si un parametro boolean es (true)
+     * Metodo para imprimir los datos que están dentro del arreglo, solo si un parametro boolean es (true)
      * @param personas -> arreglo
      */
     protected void listActiveID(Persona[] personas){
