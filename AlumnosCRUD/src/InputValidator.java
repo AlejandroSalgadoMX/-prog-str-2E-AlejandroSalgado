@@ -25,7 +25,6 @@ public class InputValidator {
         }
     }
 
-
     /**
      * Metodo para validar que el ID sea válido
      * @param scanner -> declarado en Main
