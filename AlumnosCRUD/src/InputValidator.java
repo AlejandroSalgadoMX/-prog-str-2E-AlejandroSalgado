@@ -43,7 +43,6 @@ public class InputValidator {
                 scanner.next();
             }
         }
-
     }
 
     /**
