@@ -11,33 +11,58 @@ import javafx.scene.control.TextField;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Controlador principal de la aplicación.
+ * Maneja la interacción entre la interfaz gráfica (FXML) y la lógica
+ * de negocio definida en {@link PersonService}.
+ */
 public class AppControllers {
 
+    /** Etiqueta para mostrar mensajes al usuario */
     @FXML
     private Label lblMsg;
+
+    /** Lista visual que muestra los datos cargados */
     @FXML
     private ListView<String> listView;
+
+    /** Campo de texto para ingresar el nombre*/
     @FXML
     private TextField txtName;
+
+    /** Campo de texto para ingresar el correo electrónico */
     @FXML
     private TextField txtEmail;
 
+    /** Lista observable que contiene los datos mostrados en el ListView */
     @FXML
     private ObservableList<String> data= FXCollections.observableArrayList();
 
+    /** Servicio que gestiona la lógica de personas */
     private PersonService service=new PersonService();
 
+    /**
+     * Inicializa el controlador cargando los datos desde archivo
+     * y vinculando la lista observable al ListView.
+     */
     @FXML
     public void initialize(){
         loadFromFile();
         listView.setItems(data);
     }
 
+    /**
+     * Recarga los datos desde el archivo.
+     */
     @FXML
     public void onReload(){
         loadFromFile();
     }
 
+    /**
+     * Carga los datos desde el repositorio y actualiza la lista.
+     * Muestra mensajes de éxito o error en la etiqueta.
+     */
     private void loadFromFile() {
         try{
             List<String> items=service.loadDataForListView();
@@ -50,6 +75,10 @@ public class AppControllers {
         }
     }
 
+    /**
+     * Agrega una nueva persona utilizando los datos ingresados en los campos de texto.
+     * Muestra mensajes de éxito o error en la etiqueta.
+     */
     @FXML
     public void onAdd() {
 
@@ -69,7 +98,5 @@ public class AppControllers {
             lblMsg.setText("Hubo un error con los datos: "+e.getMessage());
             lblMsg.setStyle("-fx-text-fill: red");
         }
-
-
     }
 }
