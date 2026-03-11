@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/MergeWithOutConflict/MergeWithOutConflict.iml" filepath="$PROJECT_DIR$/MergeWithOutConflict/MergeWithOutConflict.iml" />
       <module fileurl="file://$PROJECT_DIR$/calculadoraPOO/calculadoraPOO(EjemploClases).iml" filepath="$PROJECT_DIR$/calculadoraPOO/calculadoraPOO(EjemploClases).iml" />
       <module fileurl="file://$PROJECT_DIR$/../demoJavaFx/demoJavaFx.iml" filepath="$PROJECT_DIR$/../demoJavaFx/demoJavaFx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../demoListView/demoListView.iml" filepath="$PROJECT_DIR$/../demoListView/demoListView.iml" />
     </modules>
   </component>
 </project>
