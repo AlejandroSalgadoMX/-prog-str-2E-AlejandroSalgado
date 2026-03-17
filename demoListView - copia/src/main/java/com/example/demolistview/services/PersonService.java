@@ -31,7 +31,7 @@ public class PersonService {
             String name=parts[0];
             String email=parts[1];
             String edad=parts[2];
-            result.add("Nombre: "+name+" - Email: "+email+ " - Edad:"+edad);
+            result.add(name+" - "+email+ " - "+edad);
         }
         return result;
     }
@@ -74,5 +74,59 @@ public class PersonService {
             }
         }
 
+    }
+
+    /**
+     * Obtiene todas las líneas no nulas y no vacías
+     * desde el repositorio.
+     * @return Lista de líneas limpias
+     * @throws IOException si ocurre un error al leer el repositorio
+     */
+    private List<String> getCleanLines() throws IOException {
+        List<String> lines=repository.readAllLines();
+        List<String> cleanLines = new ArrayList<>();
+
+        for(String line : lines){
+            if (line!=null && !line.isBlank()){
+                cleanLines.add(line);
+            }
+        }
+        return cleanLines;
+    }
+
+    /**
+     * Actualiza los datos de una persona en la posición indicada
+     * dentro del repositorio y guarda los cambios.
+     * @param index posición de la persona a actualizar (>= 0)
+     * @param name  nuevo nombre
+     * @param email nuevo correo electrónico
+     * @param edad  nueva edad
+     * @throws IllegalArgumentException si el índice es inválido
+     * @throws IOException si ocurre un error al leer o guardar datos
+     */
+    public void updatePerson(int index, String name,String email, String edad) throws IOException {
+        validate(name, email, edad);
+        if (index<0){throw new IllegalArgumentException("El indice es invalido");}
+        List<String> data= getCleanLines();
+        data.set(index,name+","+email+","+edad);
+        repository.saveFile(data);
+    }
+
+    /**
+     * Elimina a la persona en la posición indicada
+     * dentro del repositorio y guarda los cambios.
+     * @param index posición de la persona a eliminar (>= 0)
+     * @param name  nombre de la persona (validación)
+     * @param email correo electrónico de la persona (validación)
+     * @param edad  edad de la persona (validación)
+     * @throws IllegalArgumentException si el índice es inválido
+     * @throws IOException si ocurre un error al leer o guardar datos
+     */
+    public void deletePerson(int index, String name,String email, String edad) throws IOException {
+        validate(name, email, edad);
+        if (index<0){throw new IllegalArgumentException("El indice es invalido");}
+        List<String> data= getCleanLines();
+        data.remove(index);
+        repository.saveFile(data);
     }
 }

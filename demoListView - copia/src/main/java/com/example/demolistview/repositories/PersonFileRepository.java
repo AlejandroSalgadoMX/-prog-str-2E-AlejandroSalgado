@@ -47,4 +47,15 @@ public class PersonFileRepository {
         ensureFile();
         Files.writeString(filePath, line+System.lineSeparator(), StandardCharsets.UTF_8, StandardOpenOption.APPEND);
     }
+
+    /**
+     * Guarda en el archivo las líneas indicadas,
+     * sobrescribiendo el contenido existente.
+     * @param lines Lista de cadenas a escribir en el archivo
+     * @throws IOException si ocurre un error de escritura
+     */
+    public void saveFile(List<String> lines) throws IOException {
+        ensureFile();
+        Files.write(filePath, lines, StandardCharsets.UTF_8, StandardOpenOption.TRUNCATE_EXISTING);
+    }
 }

@@ -52,6 +52,11 @@ public class AppControllers {
     @FXML
     public void initialize(){
         loadFromFile();
+        listView.getSelectionModel().selectedItemProperty().addListener(
+                (obs, oldValue, newValue) ->{
+                    loadDataToForm(newValue);
+                }
+        );
         listView.setItems(data);
     }
 
@@ -91,18 +96,88 @@ public class AppControllers {
             String email = txtEmail.getText();
             String edad=txtEdad.getText();
             service.addPerson(name, email, edad);
+            loadFromFile();
             lblMsg.setText("Persona creada con exito");
             lblMsg.setStyle("-fx-text-fill: green");
             txtEmail.clear();
             txtName.clear();
             txtEdad.clear();
-            loadFromFile();
         } catch (IOException e) {
             lblMsg.setText("Hubo un error con el archivo");
             lblMsg.setStyle("-fx-text-fill: red");
 
         } catch (IllegalArgumentException e){
             lblMsg.setText("Hubo un error con los datos: "+e.getMessage());
+            lblMsg.setStyle("-fx-text-fill: red");
+        }
+    }
+
+    /**
+     * Carga en el formulario los valores de nombre, email y edad
+     * a partir de una cadena separada por " -".
+     * @param data String con formato "Nombre - Email - Edad"
+     */
+    private void loadDataToForm(String data){
+        String [] parts=data.split(" - ");
+        txtName.setText(parts[0]);
+        txtEmail.setText(parts[1]);
+        txtEdad.setText(parts[2]);
+    }
+
+    /**
+     * Actualiza una persona utilizando los datos ingresados en los campos de texto y recarga la lista.
+     * Muestra mensajes de éxito o error en la etiqueta.
+     */
+    @FXML
+    public void onUpdate(){
+
+        try {
+            int index = listView.getSelectionModel().getSelectedIndex();
+            String name = txtName.getText();
+            String email = txtEmail.getText();
+            String edad=txtEdad.getText();
+            service.updatePerson(index, name, email, edad);
+            loadFromFile();
+            lblMsg.setText("Persona actualizada con exito");
+            lblMsg.setStyle("-fx-text-fill: green");
+            txtEmail.clear();
+            txtName.clear();
+            txtEdad.clear();
+        } catch (IOException e) {
+            lblMsg.setText("Hubo un error con el archivo");
+            lblMsg.setStyle("-fx-text-fill: red");
+
+        } catch (IllegalArgumentException e){
+            lblMsg.setText("Hubo un error con los datos al actualizar: "+e.getMessage());
+            lblMsg.setStyle("-fx-text-fill: red");
+        }
+    }
+
+    /**
+     * Borra una persona utilizando los datos ingresados en los campos de texto y recarga la lista.
+     * Muestra mensajes de éxito o error en la etiqueta.
+     */
+    @FXML
+    public void onDelete(){
+
+        try {
+            int index = listView.getSelectionModel().getSelectedIndex();
+            String name = txtName.getText();
+            String email = txtEmail.getText();
+            String edad=txtEdad.getText();
+            service.deletePerson(index, name, email, edad);
+            loadFromFile();
+            lblMsg.setText("Persona eliminada con exito");
+            lblMsg.setStyle("-fx-text-fill: green");
+            txtEmail.clear();
+            txtName.clear();
+            txtEdad.clear();
+        } catch (IOException e) {
+            lblMsg.setText("Hubo un error con el archivo");
+            lblMsg.setStyle("-fx-text-fill: red");
+
+        } catch (IllegalArgumentException e){
+            lblMsg.setText("Hubo un error con los datos al actualizar: "+e.getMessage());
             lblMsg.setStyle("-fx-text-fill: red");
         }
     }
