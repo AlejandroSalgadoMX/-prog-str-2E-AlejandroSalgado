@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Vista principal de la aplicación de contactos de emergencia -->
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.contactoemergencia.ContactoController">
+
+    <!-- Campo de texto para ingresar el nombre del contacto -->
+    <TextField fx:id="txtNombre" layoutX="14.0" layoutY="27.0" promptText="Nombre" />
+
+    <!-- Campo de texto para ingresar el teléfono del contacto -->
+    <TextField fx:id="txtTelefono" layoutX="189.0" layoutY="27.0" promptText="Teléfono" />
+
+    <!-- ComboBox para seleccionar el parentesco del contacto -->
+    <ComboBox fx:id="cmbParentesco" layoutX="386.0" layoutY="27.0" />
+
+    <!-- Botones de acción: agregar, buscar, actualizar, eliminar y limpiar -->
+    <Button layoutX="14.0" layoutY="62.0" onAction="#agregarContacto" text="Agregar" />
+    <Button layoutX="112.0" layoutY="62.0" onAction="#buscarContacto" text="Buscar" />
+    <Button layoutX="196.0" layoutY="62.0" onAction="#actualizarContacto" text="Actualizar" />
+    <Button layoutX="294.0" layoutY="62.0" onAction="#eliminarContacto" text="Eliminar" />
+    <Button layoutX="384.0" layoutY="62.0" onAction="#limpiarCampos" text="Limpiar" />
+
+    <!-- Lista que muestra los contactos registrados -->
+    <ListView fx:id="listViewContactos" layoutY="117.0" prefHeight="188.0" prefWidth="500" />
+
+    <!-- Etiquetas descriptivas -->
+    <Label layoutX="142.0" layoutY="5.0" text="Lista de contactos de Emergencia" />
+    <Label layoutX="196.0" layoutY="99.0" text="Contactos" />
+</AnchorPane>
